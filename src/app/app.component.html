@@ -1,150 +1,54 @@
 
-
-    <!-- Navigation -->
-
- 
-
-
-    <!-- Page Content -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container">
-
-      <!-- Heading Row -->
-      <div class="row my-4">
-        <div class="col-lg-8">
-          <!--img class="img-fluid rounded" src="http://placehold.it/900x400" alt=""-->
+      
+      <!-- a class="navbar-brand" href="#">డిట్రాయిట్ తెలుగు సాహితీ సమితి</a -->
+      <a class="navbar-brand" href="#"><img src="/assets/dtlclogo.jpg"  class="img-responsive" width="200" height="50"/></a>
+      <a class="navbar-brand" href="#">డిట్రాయిట్ తెలుగు సాహితీ సమితి</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon">
+        
+        </span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
          
-                
-<!--Carousel Wrapper-->
-<div id="carousel-example-2" class="carousel slide carousel-fade" data-ride="carousel">
-    <!--Indicators-->
-    <ol class="carousel-indicators">
-        <li data-target="#carousel-example-2" data-slide-to="0" class="active"></li>
-        <li data-target="#carousel-example-2" data-slide-to="1"></li>
-        <li data-target="#carousel-example-2" data-slide-to="2"></li>
-    </ol>
-    <!--/.Indicators-->
-    <!--Slides-->
-    <div class="carousel-inner" role="listbox">
-        <div class="carousel-item active">
-            <div class="view">
-                <img class="d-block w-100" src="/assets/1.jpg" alt="First slide">
-                <div class="mask rgba-black-light"></div>
-            </div>
-            <div class="carousel-caption">
-                <h3 class="h3-responsive">Event 1</h3>
-                <p>First text</p>
-            </div>
-        </div>
-        <div class="carousel-item">
-            <!--Mask color-->
-            <div class="view">
-                <img class="d-block w-100" src="/assets/2.jpg" alt="Second slide">
-                <div class="mask rgba-black-strong"></div>
-            </div>
-            <div class="carousel-caption">
-                <h3 class="h3-responsive">Event 2</h3>
-                <p>Secondary text</p>
-            </div>
-        </div>
-        <div class="carousel-item">
-            <!--Mask color-->
-            <div class="view">
-                <img class="d-block w-100" src="/assets/3.jpg" alt="Third slide">
-                <div class="mask rgba-black-slight"></div>
-            </div>
-            <div class="carousel-caption">
-                <h3 class="h3-responsive">Event 3</h3>
-                <p>Third text</p>
-            </div>
-        </div>
+          <li class="nav-item">
+          <!--   <a class="nav-link" href="#">Membership</a> -->
+            <a  class="nav-link" routerLink="/test">Membership</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" routerLink="/events" >Conferences</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Discussions</a>
+              </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
     </div>
-    <!--/.Slides-->
-    <!--Controls-->
-    <a class="carousel-control-prev" href="#carousel-example-2" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-    </a>
-    <a class="carousel-control-next" href="#carousel-example-2" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-    </a>
-    <!--/.Controls-->
-</div>
-<!--/.Carousel Wrapper-->
+  </nav>
+<!-- <nav>
+    <a routerLink="/welcome">Welcome</a>
+  <a routerLink="/test">Dashboard</a>
+</nav> -->
+<router-outlet></router-outlet>
 
-        </div>
-        <!-- /.col-lg-8 -->
-        <div class="col-lg-4">
-          <h1>Detroit Telugu Literary Club</h1>
-          <p>
-              News
-              Any special news pertaining to DTLC or Telugu literature in general.
-              
-              A splash of the DTLC 20th Anniversary conference could also be displayed here with links to the page for conferences
-              
 
-          </p>
-                 <a class="btn btn-primary btn-lg" href="#">Call to Action!</a>
-        </div>
-        <!-- /.col-md-4 -->
-      </div>
-      <!-- /.row -->
-
-      <!-- Call to Action Well -->
-      <div class="card text-white bg-secondary my-4 text-center">
-        <div class="card-body">
-          <p class="text-red m-0">తెలుగు చదవండి, చదివించండి, మాట్లాడండి</p>
-        </div>
-      </div>
-
-      <!-- Content Row -->
-      <div class="row">
-        <div class="col-md-4 mb-4">
-          <div class="card h-100">
-            <div class="card-body">
-              <h2 class="card-title">Card One</h2>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem magni quas ex numquam, maxime minus quam molestias corporis quod, ea minima accusamus.</p>
-            </div>
-            <div class="card-footer">
-              <a href="#" class="btn btn-primary">More Info</a>
-            </div>
+      <!-- Footer -->
+      <footer class="py-5 bg-dark">
+          <div class="container">
+            <p class="m-0 text-center text-white">Copyright &copy; DTLC Group 2017</p>
           </div>
-        </div>
-        <!-- /.col-md-4 -->
-        <div class="col-md-4 mb-4">
-          <div class="card h-100">
-            <div class="card-body">
-              <h2 class="card-title">Card Two</h2>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod tenetur ex natus at dolorem enim! Nesciunt pariatur voluptatem sunt quam eaque, vel, non in id dolore voluptates quos eligendi labore.</p>
-            </div>
-            <div class="card-footer">
-              <a href="#" class="btn btn-primary">More Info</a>
-            </div>
-          </div>
-        </div>
-        <!-- /.col-md-4 -->
-        <div class="col-md-4 mb-4">
-          <div class="card h-100">
-            <div class="card-body">
-              <h2 class="card-title">Card Three</h2>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem magni quas ex numquam, maxime minus quam molestias corporis quod, ea minima accusamus.</p>
-            </div>
-            <div class="card-footer">
-              <a href="#" class="btn btn-primary">More Info</a>
-            </div>
-          </div>
-        </div>
-        <!-- /.col-md-4 -->
-
-      </div>
-      <!-- /.row -->
-
-    </div>
-    <!-- /.container -->
-
-
-
-
-
-
-
+          <!-- /.container -->
+        </footer>

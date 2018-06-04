@@ -1,11 +1,4 @@
 import { Component } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
-import { TestPageComponent } from './test-page/test-page.component';
-
-
-const appRoutes: Routes = [
-  { path: 'test-page', component: TestPageComponent}
-];
 
 
 
@@ -15,7 +8,7 @@ const appRoutes: Routes = [
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
+  title = 'DTLC Group';
 }
 
 
