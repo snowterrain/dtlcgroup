@@ -10,11 +10,15 @@ import { WelcomeComponent } from './welcome/welcome.component';
 import { EventCalendarComponent } from './event-calendar/event-calendar.component';
 
 
+
 //calendar module
 
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CalendarModule } from 'angular-calendar';
+import { AboutComponent } from './about/about.component';
+import { DiscussionsComponent } from './discussions/discussions.component';
+import { ContactComponent } from './contact/contact.component';
 
 
 @NgModule({
@@ -22,7 +26,10 @@ import { CalendarModule } from 'angular-calendar';
     AppComponent,
     TestPageComponent,
     WelcomeComponent,
-    EventCalendarComponent
+    EventCalendarComponent,
+    AboutComponent,
+    DiscussionsComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
