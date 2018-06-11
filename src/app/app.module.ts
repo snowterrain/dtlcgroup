@@ -8,6 +8,8 @@ import { TestPageComponent } from './test-page/test-page.component';
 import { AppRoutingModule } from './app-routing.module';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { EventCalendarComponent } from './event-calendar/event-calendar.component';
+import { FormsModule }   from '@angular/forms';
+import { HttpClientModule }    from '@angular/common/http';
 
 
 
@@ -19,6 +21,10 @@ import { CalendarModule } from 'angular-calendar';
 import { AboutComponent } from './about/about.component';
 import { DiscussionsComponent } from './discussions/discussions.component';
 import { ContactComponent } from './contact/contact.component';
+import { RegisterComponent } from './register/register.component';
+import { MessagesComponent } from './messages/messages.component';
+import { ConferencesComponent } from './conferences/conferences.component';
+import { BooksreadComponent } from './booksread/booksread.component';
 
 
 @NgModule({
@@ -29,12 +35,18 @@ import { ContactComponent } from './contact/contact.component';
     EventCalendarComponent,
     AboutComponent,
     DiscussionsComponent,
-    ContactComponent
+    ContactComponent,
+    RegisterComponent,
+    MessagesComponent,
+    ConferencesComponent,
+    BooksreadComponent
   ],
   imports: [
     BrowserModule,
+    FormsModule,
+    HttpClientModule,
     AppRoutingModule,
-    BrowserAnimationsModule,
+     BrowserAnimationsModule,
      CalendarModule.forRoot()
   ],
   providers: [],
