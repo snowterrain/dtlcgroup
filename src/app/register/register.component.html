@@ -10,7 +10,7 @@
   <div [hidden]="submitted">
     <h1>నమోదు వివరాలు</h1>
     <form (ngSubmit)="onSubmit()" #userForm="ngForm">
-      <div class="form-group">
+      <div class="form-group required">
         <label for="firstname">మీ పేరు</label>
         <input type="text" class="form-control" id="firstname"
                required
@@ -22,7 +22,7 @@
         </div>
       </div>
 <!-- required Field-->
-      <div class="form-group">
+      <div class="form-group required">
           <label for="lastname">మీ ఇంటి పేరు</label>
           <input type="text" class="form-control" id="lastname"
                  required
@@ -35,7 +35,7 @@
         </div>
 
 <!-- required Field-->
-      <div class="form-group">
+      <div class="form-group required">
         <label for="email">ఈమెయిలు</label>
         <input type="email" class="form-control" id="email"
         required
@@ -78,7 +78,7 @@
           </div>
 
           <!-- required Field-->
-          <div class="form-group">
+          <div class="form-group required">
               <label for="city">ఊరు</label>
               <input type="text" class="form-control" id="city"
               required
@@ -91,7 +91,7 @@
             </div>
 
             <!-- required Field-->
-            <div class="form-group">
+            <div class="form-group required">
                 <label for="state">రాష్ట్రము</label>
                 <input type="text" class="form-control" id="state"
                 required
@@ -207,22 +207,22 @@
     </form>
   </div>
  
+  
    <div [hidden]="!submitted">
-    <h2>నమోదు చేసుకున్నందుకు మప్పిదాలు. మీ రాకకై ఎదురు చూస్తుంటాము. </h2>
+ 
     <div class="row">
-      <div class="col-xs-3">Name</div>
-      <div class="col-xs-9  pull-left">{{ model.name }}</div>
+     <div> <h2> {{ model.firstname }} {{model.lastname}} గారు నమోదు చేసుకున్నందుకు మప్పిదాలు. మీ రాకకై ఎదురు చూస్తుంటాము. </h2></div>
     </div>
-    <div class="row">
+    <!-- <div class="row">
       <div class="col-xs-3">Alter Ego</div>
       <div class="col-xs-9 pull-left">{{ model.alterEgo }}</div>
-    </div>
-    <div class="row">
+    </div> -->
+    <!-- <div class="row">
       <div class="col-xs-3">Power</div>
       <div class="col-xs-9 pull-left">{{ model.power }}</div>
-    </div>
+    </div> -->
     <br>
-    <button class="btn btn-primary" (click)="submitted=false">Edit</button> -->
+    <!--button class="btn btn-primary" (click)="submitted=false">Edit</button> -->
   </div> 
 
 </div>

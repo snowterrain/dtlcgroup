@@ -18,8 +18,34 @@ export class RegisterComponent implements OnInit {
   submitted = false;
   powers = ['Really Smart', 'Super Flexible',
             'Super Hot', 'Weather Changer'];
- 
-  model = new User(18, '', '','no','no','no','no',this.powers[0], 'Chuck Overstreet');
+           /*  public id: number,
+            public firstname: string,
+            public lastname: string,
+            public email: string,
+            
+            public phone:string,
+            public city:string,
+            public state:string,
+         
+      
+      
+            public accomdationFlag:string,
+            public wiilYouVolunteerTospeakFlag:string,
+            public localTravelNeedsFlag:string,
+          
+            public isVegetarianFlag:string,
+            public power: string,
+      
+            public alterEgo?: string,
+            public street1?: string,
+            public street2?: string,
+            public zip?:number,
+            public comments?:string */
+            
+
+
+
+  model = new User(18, '', '','','','','','no','no','no','no',this.powers[0], 'Chuck Overstreet');
 
  
  
@@ -27,7 +53,7 @@ export class RegisterComponent implements OnInit {
  
   onSubmit() { 
     
-    this.submitted = false; 
+    this.submitted = true; 
   
    
     this.userService.addUser(this.model)

@@ -2,6 +2,7 @@ var EventUser = require('./models/eventuser');
 var nodemailer = require('nodemailer');
 var fs      = require('fs');
 var mustache = require('mustache');
+const path = require("path");
 
 
 
@@ -70,23 +71,58 @@ module.exports = function (app) {
 console.log("method called ");
 
         // create a todo, information comes from AJAX request from Angular
-        console.log("Hello 2 "+req.body);
-        console.log("Hello "+req.body.name);
 
 
-        console.log(req.body.fname);
-        console.log(req.body.lname);
+
+        console.log(req.body.firstname);
+        console.log(req.body.lastname);
         console.log(req.body.email);
         console.log(req.body.phone);
         console.log(req.body.message);
 
+                   /*  public id: number,
+            public firstname: string,
+            public lastname: string,
+            public email: string,
+            
+            public phone:string,
+            public city:string,
+            public state:string,
+         
+      
+      
+            public accomdationFlag:string,
+            public wiilYouVolunteerTospeakFlag:string,
+            public localTravelNeedsFlag:string,
+          
+            public isVegetarianFlag:string,
+            public power: string,
+      
+            public alterEgo?: string,
+            public street1?: string,
+            public street2?: string,
+            public zip?:number,
+            public comments?:string */
+
+
 
  			var newEventUser = new EventUser({
-                "name": 'req.body.name',
-                "lname":'test4',
-				"email": 'test@test.com',
-				"phone": '234-234-2345',
-				"message": 'req.body.message'
+
+                "firstname": req.body.firstname,
+                "lastname": req.body.lastname,
+                "email": req.body.email,
+                "phone": req.body.phone,
+                "city": req.body.city,
+                "state": req.body.state,
+                "accomdationFlag": req.body.accomdationFlag,
+                "wiilYouVolunteerTospeakFlag":req.body.wiilYouVolunteerTospeakFlag,
+                "localTravelNeedsFlag": req.body.localTravelNeedsFlag,
+                "isVegetarianFlag": req.body.isVegetarianFlag, 
+                "street1": req.body.street1,
+                "street2": req.body.street2,
+                "zip": req.body.zip,
+                "comments": req.body.comments
+
 			});
 
             newEventUser.save(newEventUser, function (err) {
@@ -104,11 +140,13 @@ console.log("method called ");
 
                 } else{
                 var data = {
-                    "fname":req.body.fname,
-                    "lname":req.body.lname
+                    "firstname":req.body.firstname,
+                    "lastname":req.body.lastname
                } ;
 
-                var content = fs.readFileSync('/assets/email.html').toString();;
+               var content = fs.readFileSync(path.join(__dirname, '../dist/dtlcgroup/assets') + '/email.html', 'utf8');
+
+                //var content = fs.readFileSync('/assets/email.html').toString();;
                 var html = mustache.to_html(content,data);
                 //var html = mustache.to_html(content,{fname: req.body.fname,lname:req.body.lname});
 
@@ -118,7 +156,7 @@ console.log("method called ");
 
                 console.log("new user registered! Save Succesful "+req.body.lname+">>>>>>>>>>>>"+sendMail);
                 '<h1>Welcome</h1><p>That was easy!</p>'
-                sendMail(req.body.email, "Thank You for registering "+req.body.fname , html
+                sendMail(req.body.email, "Thank You for registering "+req.body.firstname , html
                 );
 
                 res.send("ok");
