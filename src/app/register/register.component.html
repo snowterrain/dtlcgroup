@@ -11,12 +11,12 @@
     <h1>నమోదు వివరాలు</h1>
     <form (ngSubmit)="onSubmit()" #userForm="ngForm">
       <div class="form-group">
-        <label for="name">మీ పేరు</label>
-        <input type="text" class="form-control" id="name"
+        <label for="firstname">మీ పేరు</label>
+        <input type="text" class="form-control" id="firstname"
                required
-               [(ngModel)]="model.name" name="name"
-               #name="ngModel">
-        <div [hidden]="name.valid || name.pristine"
+               [(ngModel)]="model.firstname" name="firstname"
+               #firstname="ngModel">
+        <div [hidden]="firstname.valid || firstname.pristine"
              class="alert alert-danger">
           Firstname is required
         </div>
@@ -27,7 +27,7 @@
           <input type="text" class="form-control" id="lastname"
                  required
                  [(ngModel)]="model.lastname" name="lastname"
-                 #name="ngModel">
+                 #lastname="ngModel">
           <div [hidden]="lastname.valid || lastname.pristine"
                class="alert alert-danger">
             Lastname is required
@@ -36,11 +36,12 @@
 
 <!-- required Field-->
       <div class="form-group">
-        <label for="alterEgo">ఈమెయిలు</label>
+        <label for="email">ఈమెయిలు</label>
         <input type="email" class="form-control" id="email"
         required
-               [(ngModel)]="model.email" name="email">
-        <div [hidden]="name.valid || name.pristine"
+               [(ngModel)]="model.email" name="email" 
+               #email="ngModel">
+        <div [hidden]="email.valid || email.pristine"
                class="alert alert-danger">
             Email is required
           </div>
@@ -50,8 +51,10 @@
         <label for="phone">ఫోన్</label>
         <input type="text" class="form-control" id="phone"
         required
-               [(ngModel)]="model.phone" name="phone">
-        <div [hidden]="name.valid || name.pristine"
+               [(ngModel)]="model.phone" name="phone"
+               #phone="ngModel"
+               >
+        <div [hidden]="phone.valid || phone.pristine"
                class="alert alert-danger">
             Phone is required
           </div>
@@ -62,120 +65,103 @@
       <div class="form-group">
           <label for="street1">వీధి 1</label>
           <input type="text" class="form-control" id="street1"
-          required
+          
                  [(ngModel)]="model.street1" name="street1">
-          <div [hidden]="street1.valid || street1.pristine"
-                 class="alert alert-danger">
-              Phone is required
-            </div>
+         
         </div>
 
         <div class="form-group">
-            <label for="phone">వీధి 2</label>
-            <input type="text" class="form-control" id="phone"
-            required
-                   [(ngModel)]="model.phone" name="phone">
-            <div [hidden]="name.valid || name.pristine"
-                   class="alert alert-danger">
-                Phone is required
-              </div>
+            <label for="street2">వీధి 2</label>
+            <input type="text" class="form-control" id="street2"
+                 [(ngModel)]="model.street2" name="street2">
+           
           </div>
 
           <!-- required Field-->
           <div class="form-group">
-              <label for="phone">ఊరు</label>
-              <input type="text" class="form-control" id="phone"
+              <label for="city">ఊరు</label>
+              <input type="text" class="form-control" id="city"
               required
-                     [(ngModel)]="model.phone" name="phone">
-              <div [hidden]="name.valid || name.pristine"
+                     [(ngModel)]="model.city" name="city"
+                     #city="ngModel">
+              <div [hidden]="city.valid || city.pristine"
                      class="alert alert-danger">
-                  Phone is required
+                  City is required
                 </div>
             </div>
 
             <!-- required Field-->
             <div class="form-group">
-                <label for="phone">రాష్ట్రము</label>
-                <input type="text" class="form-control" id="phone"
+                <label for="state">రాష్ట్రము</label>
+                <input type="text" class="form-control" id="state"
                 required
-                       [(ngModel)]="model.phone" name="phone">
-                <div [hidden]="name.valid || name.pristine"
+                       [(ngModel)]="model.state" name="state"
+                       #state="ngModel">
+                <div [hidden]="state.valid || state.pristine"
                        class="alert alert-danger">
-                    Phone is required
+                    State is required
                   </div>
               </div>
 
               <div class="form-group">
-                  <label for="phone">జిప్</label>
-                  <input type="text" class="form-control" id="phone"
-                  required
-                         [(ngModel)]="model.phone" name="phone">
-                  <div [hidden]="name.valid || name.pristine"
-                         class="alert alert-danger">
-                      Phone is required
-                    </div>
+                  <label for="zip">జిప్</label>
+                  <input type="text" class="form-control" id="zip"
+                                       [(ngModel)]="model.zip" name="zip">
+                  
                 </div>
 
                 <!-- required Field default NO radio button -->
 
                 <div class="form-group">
-                    <label for="phone">బస ఏర్పాటు కావాలా?</label>
-                    <input type="text" class="form-control" id="phone"
-                    required
-                           [(ngModel)]="model.phone" name="phone">
-                    <div [hidden]="name.valid || name.pristine"
-                           class="alert alert-danger">
-                        Phone is required
-                      </div>
+                    <label for="accomdationFlag">బస ఏర్పాటు కావాలా? </label>
+
+                    <input type="radio" value="yes" name="travel" [(ngModel)]="model.accomdationFlag"> Yes
+                    <input type="radio" value="no" name="travel"  [(ngModel)]="model.accomdationFlag"> No
+                                     
                   </div>
 
-                        <!-- required Field default NO radio button -->
                   <div class="form-group">
-                      <label for="phone">సమావేశము లో మాట్లాడదలుచుకున్నారా?</label>
-                      <input type="text" class="form-control" id="phone"
-                      required
-                             [(ngModel)]="model.phone" name="phone">
-                      <div [hidden]="name.valid || name.pristine"
-                             class="alert alert-danger">
-                          Phone is required
-                        </div>
+                      <label for="wiilYouVolunteerTospeakFlag">సమావేశము లో మాట్లాడదలుచుకున్నారా? </label>
+  
+                      <input type="radio" value="yes" name="confer" [(ngModel)]="model.wiilYouVolunteerTospeakFlag"> Yes
+                      <input type="radio" value="no" name="confer"  [(ngModel)]="model.wiilYouVolunteerTospeakFlag"> No
+                                       
                     </div>
 
-      <!-- required Field default NO radio button -->
+                    <div class="form-group">
+                        <label for="localTravelNeedsFlag">మీకు స్థానిక  ప్రయాణ ఏర్పాట్లు కావాలా? </label>
+    
+                        <input type="radio" value="yes" name="localtravel" [(ngModel)]="model.localTravelNeedsFlag"> Yes
+                        <input type="radio" value="no" name="localtravel"  [(ngModel)]="model.localTravelNeedsFlag"> No
+                                         
+                      </div>
 
                       <div class="form-group">
-                          <label for="phone">మీకు స్థానిక  ప్రయాణ ఏర్పాట్లు కావాలా?</label>
-                          <input type="text" class="form-control" id="phone"
-                          required
-                                 [(ngModel)]="model.phone" name="phone">
-                          <div [hidden]="name.valid || name.pristine"
-                                 class="alert alert-danger">
-                              Phone is required
-                            </div>
+                          <label for="isVegetarianFlag">శాకాహరి మాత్రమే? </label>
+      
+                          <input type="radio" value="yes" name="food" [(ngModel)]="model.isVegetarianFlag"> Yes
+                          <input type="radio" value="no" name="food"  [(ngModel)]="model.isVegetarianFlag"> No
+                                           
                         </div>
 
-                              <!-- required Field default NO radio button -->
-                        <div class="form-group">
-                            <label for="phone">శాకాహరి మాత్రమే?</label>
-                            <input type="text" class="form-control" id="phone"
-                            required
-                                   [(ngModel)]="model.phone" name="phone">
-                            <div [hidden]="name.valid || name.pristine"
-                                   class="alert alert-danger">
-                                Phone is required
-                              </div>
-                          </div>
+     
+
+                     
 <!--Text area-->
-                          <div class="form-group">
-                              <label for="phone">మీరు ఇంకేమైనా చెప్పదలుచుకున్నారా?</label>
-                              <input type="text" class="form-control" id="phone"
-                              required
-                                     [(ngModel)]="model.phone" name="phone">
-                              <div [hidden]="name.valid || name.pristine"
-                                     class="alert alert-danger">
-                                  Phone is required
-                                </div>
-                            </div>
+                        <!--   <div class="form-group">
+                              <label for="comments">మీరు ఇంకేమైనా చెప్పదలుచుకున్నారా?</label>
+                              <input type="textarea" class="form-control" id="phone"
+                              
+                                     [(ngModel)]="model.comments" name="comments">
+                      
+                            </div> -->
+
+                            <div class="form-group">
+                                <label for="comments">మీరు ఇంకేమైనా చెప్పదలుచుకున్నారా?</label>
+                                <textarea class="form-control" id="comments" rows="3"
+                                [(ngModel)]="model.comments" name="comments">
+                                ></textarea>
+                              </div>
   
                         
                     
@@ -223,7 +209,7 @@
  
    <div [hidden]="!submitted">
     <h2>నమోదు చేసుకున్నందుకు మప్పిదాలు. మీ రాకకై ఎదురు చూస్తుంటాము. </h2>
-    <!-- <div class="row">
+    <div class="row">
       <div class="col-xs-3">Name</div>
       <div class="col-xs-9  pull-left">{{ model.name }}</div>
     </div>

@@ -15,17 +15,19 @@ export class RegisterComponent implements OnInit {
   
   }
 
-   
+  submitted = false;
   powers = ['Really Smart', 'Super Flexible',
             'Super Hot', 'Weather Changer'];
  
-  model = new User(18, '', this.powers[0], 'Chuck Overstreet');
+  model = new User(18, '', '','no','no','no','no',this.powers[0], 'Chuck Overstreet');
+
  
-  submitted = false;
+ 
+ 
  
   onSubmit() { 
     
-    this.submitted = true; 
+    this.submitted = false; 
   
    
     this.userService.addUser(this.model)
@@ -37,7 +39,7 @@ export class RegisterComponent implements OnInit {
   }
  
   newUser() {
-    this.model = new User(42, '', '');
+    //this.model = new User(42, '', '');
   }
 
 }
