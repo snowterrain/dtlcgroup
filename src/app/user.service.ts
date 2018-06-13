@@ -7,6 +7,7 @@ import { catchError, map, tap } from 'rxjs/operators';
 import { MessageService } from './message.service';
  
 import { User } from './register/user';
+import {Member} from './test-page/member'
 
 const httpOptions = {
   headers: new HttpHeaders({ 'Content-Type': 'application/json' })
@@ -16,6 +17,7 @@ const httpOptions = {
 export class UserService {
  
   private usersURL = 'api/registerUser';  // URL to web api
+  private memberURL='api/registerMember'
  
   constructor(
     private http: HttpClient,
@@ -75,6 +77,14 @@ export class UserService {
       catchError(this.handleError<User>('addUser'))
     );
   }
+
+  addMember (Member: Member): Observable<Member> {
+    return this.http.post<Member>(this.memberURL, Member, httpOptions).pipe(
+      tap((Member: Member) => this.log(`added User w/ id=${Member.id}`)),
+      catchError(this.handleError<Member>('addMember'))
+    );
+  }
+ 
  
   /** DELETE: delete the User from the server */
   deleteUser (User: User | number): Observable<User> {

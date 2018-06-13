@@ -210,9 +210,17 @@
   
    <div [hidden]="!submitted">
  
-    <div class="row">
+   <!--  <div class="row">
      <div> <h2> {{ model.firstname }} {{model.lastname}} గారు నమోదు చేసుకున్నందుకు మప్పిదాలు. మీ రాకకై ఎదురు చూస్తుంటాము. </h2></div>
-    </div>
+    </div> -->
+
+
+
+    <div class="card text-white bg-secondary my-4 text-center">
+        <div class="card-body">
+          <p class="text-red m-0"> {{ model.firstname }} {{model.lastname}} గారు నమోదు చేసుకున్నందుకు మప్పిదాలు. మీ రాకకై ఎదురు చూస్తుంటాము.</p>
+        </div>
+      </div>
     <!-- <div class="row">
       <div class="col-xs-3">Alter Ego</div>
       <div class="col-xs-9 pull-left">{{ model.alterEgo }}</div>

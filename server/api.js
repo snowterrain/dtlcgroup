@@ -1,4 +1,5 @@
 var EventUser = require('./models/eventuser');
+var Member=require('./models/member');
 var nodemailer = require('nodemailer');
 var fs      = require('fs');
 var mustache = require('mustache');
@@ -64,7 +65,54 @@ module.exports = function (app) {
 
     });
 
-    // create todo and send back all todos after creation
+
+
+    app.post('/api/registerMember', function (req, res) {
+
+        var newMember = new Member({
+
+            "firstname": req.body.firstname,
+            "lastname": req.body.lastname,
+            "email": req.body.email,
+            "phone": req.body.phone,
+            "city": req.body.city,
+            "state": req.body.state,
+            "street1": req.body.street1,
+            "street2": req.body.street2,
+            "zip": req.body.zip,
+            "comments": req.body.comments
+
+        });
+
+        newMember.save(newMember, function (err) {
+
+            if (err) {
+
+                console.log("Member registration failed" + err);
+                res.send(err);
+
+
+            } else {
+                var data = {
+                    "firstname": req.body.firstname,
+                    "lastname": req.body.lastname
+                };
+
+                var content = fs.readFileSync(path.join(__dirname, '../dist/dtlcgroup/assets') + '/email.html', 'utf8');
+                var html = mustache.to_html(content, data);
+                sendMail(req.body.email, "Thank You for registering " + req.body.firstname, html
+
+            );
+
+                res.send("ok");
+            }
+
+        }) 
+
+
+
+    });
+    
     app.post('/api/registerUser', function (req, res) {
 
 
