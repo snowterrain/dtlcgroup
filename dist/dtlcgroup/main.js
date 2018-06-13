@@ -507,7 +507,7 @@ module.exports = "div.inner {\r\n    padding-top: 100px;\r\n    }"
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"position-relative  inner\">\n\n    <p>\n    Forum page coming soon...\n\n    <!-- pull Facebook feed discussion   -->\n    </p>\n    </div>"
+module.exports = "<div class=\"position-relative  inner\">\n\n    <p>\n \n\n    <!-- pull Facebook feed discussion   -->\n    </p>\n    </div>"
 
 /***/ }),
 
