@@ -8,7 +8,9 @@ const path = require("path");
 var http = require("http");
 setInterval(function() {
     http.get("https://dtlcgroup.herokuapp.com");
-}, 900000); // every 15 minutes (300000)
+    console.log("calling");
+
+}, 300000); // every 15 minutes (300000)
 
 //Send Mail fnctionality
 sendMail = function (toEmail, subjectLine, content) {
