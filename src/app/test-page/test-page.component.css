@@ -6,3 +6,11 @@ div.inner {
     .bg-secondary {
         background-color: #1e90ff!important;
     }
+
+
+    .required:before{
+        content:"*";
+        font-weight:bold;
+        color:red;
+        
+      }

@@ -5,12 +5,14 @@ var fs      = require('fs');
 var mustache = require('mustache');
 const path = require("path");
 
-var http = require("http");
+const https = require('https');
+
+
 setInterval(function() {
-    http.get("https://dtlcgroup.herokuapp.com");
+    https.get("https://dtlcgroup.herokuapp.com");
     console.log("calling");
 
-}, 300000); // every 15 minutes (300000)
+}, 600000); // every 15 minutes (300000)
 
 //Send Mail fnctionality
 sendMail = function (toEmail, subjectLine, content) {

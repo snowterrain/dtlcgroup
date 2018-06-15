@@ -764,7 +764,7 @@ var MessagesComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "\r\n    .bg-secondary {\r\n        background-color: #1e90ff!important;\r\n    }"
+module.exports = "\r\n    .bg-secondary {\r\n        background-color: #1e90ff!important;\r\n    }\r\n\r\n    .required:before{\r\n        content:\"*\";\r\n        font-weight:bold;\r\n        \r\n      }"
 
 /***/ }),
 
@@ -938,7 +938,7 @@ var Member = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "div.inner {\r\n    padding-top: 100px;\r\n    }\r\n\r\n\r\n    .bg-secondary {\r\n        background-color: #1e90ff!important;\r\n    }"
+module.exports = "div.inner {\r\n    padding-top: 100px;\r\n    }\r\n\r\n\r\n    .bg-secondary {\r\n        background-color: #1e90ff!important;\r\n    }\r\n\r\n\r\n    .required:before{\r\n        content:\"*\";\r\n        font-weight:bold;\r\n        color:red;\r\n        \r\n      }"
 
 /***/ }),
 
