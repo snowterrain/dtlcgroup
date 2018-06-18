@@ -25,6 +25,7 @@ import { RegisterComponent } from './register/register.component';
 import { MessagesComponent } from './messages/messages.component';
 import { ConferencesComponent } from './conferences/conferences.component';
 import { BooksreadComponent } from './booksread/booksread.component';
+import { CompletedBooksComponent } from './completed-books/completed-books.component';
 
 
 @NgModule({
@@ -39,7 +40,8 @@ import { BooksreadComponent } from './booksread/booksread.component';
     RegisterComponent,
     MessagesComponent,
     ConferencesComponent,
-    BooksreadComponent
+    BooksreadComponent,
+    CompletedBooksComponent
   ],
   imports: [
     BrowserModule,
