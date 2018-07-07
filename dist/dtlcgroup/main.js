@@ -576,7 +576,7 @@ module.exports = "div.inner {\r\n    padding-top: 200px;\r\n    }"
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div id=\"fb-root\"></div>\n<script>(function(d, s, id) {\n  var js, fjs = d.getElementsByTagName(s)[0];\n  if (d.getElementById(id)) return;\n  js = d.createElement(s); js.id = id;\n  js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0';\n  fjs.parentNode.insertBefore(js, fjs);\n}(document, 'script', 'facebook-jssdk'));</script>\n\n<div class=\"position-relative  inner\">\n\n        <div class=\"fb-comments\" data-href=\"https://developers.facebook.com/docs/plugins/comments#configurator\" data-numposts=\"5\"></div>\n        Hello \n    </div>"
+module.exports = "<div id=\"fb-root\"></div>\n<script>(function(d, s, id) {\n  var js, fjs = d.getElementsByTagName(s)[0];\n  if (d.getElementById(id)) return;\n  js = d.createElement(s); js.id = id;\n  js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0';\n  fjs.parentNode.insertBefore(js, fjs);\n}(document, 'script', 'facebook-jssdk'));</script>\n\n<div class=\"position-relative  inner\">\n\n        <div class=\"fb-comments\" data-href=\"https://developers.facebook.com/docs/plugins/comments#configurator\" data-numposts=\"5\"></div>\n  \n    </div>"
 
 /***/ }),
 
