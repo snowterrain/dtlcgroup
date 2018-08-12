@@ -12,6 +12,7 @@ import { RegisterComponent } from './register/register.component';
 import { ConferencesComponent } from './conferences/conferences.component';
 import { BooksreadComponent } from './booksread/booksread.component';
 import { CompletedBooksComponent } from './completed-books/completed-books.component';
+import {EbookComponent} from './ebook/ebook.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/welcome', pathMatch: 'full' },
@@ -24,7 +25,8 @@ const routes: Routes = [
   { path: 'register', component: RegisterComponent },
   { path: 'conferences', component: ConferencesComponent },
   { path: 'booksread', component: BooksreadComponent},
-  { path: 'cb', component: CompletedBooksComponent}
+  { path: 'cb', component: CompletedBooksComponent},
+  { path: 'ebook', component: EbookComponent}
   ];
 
 @NgModule({

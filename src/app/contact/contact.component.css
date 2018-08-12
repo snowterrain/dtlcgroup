@@ -40,3 +40,26 @@ textarea.form-control{
 a[_ngcontent-c2] {
   color: #dc3545;
 }
+
+
+html {
+	margin: 40px auto;
+	text-align: center;
+  }
+
+  .btn-fb {
+	background-color: #3b5998!important;
+	color: #fff!important;
+}
+
+.btn-yt {
+    background-color: #ed302f!important;
+    color: #fff!important;
+}
+
+.btn-email {
+    background-color: #4b515d!important;
+    color: #fff!important;
+}
+
+	  
