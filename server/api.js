@@ -61,6 +61,13 @@ function getTodos(res) {
     }); */
 };
 
+function getAll(res) {
+
+
+    res.send("HEllo World");
+   
+};
+
 module.exports = function (app) {
 
     // api ---------------------------------------------------------------------
@@ -70,6 +77,15 @@ module.exports = function (app) {
         getTodos(res);
 
     });
+
+        // get all todos
+        app.get('/api/getRegisteredUser', function (req, res) {
+            // use mongoose to get all todos in the database
+            getAll(res);
+
+    
+        });
+    
 
 
 
@@ -234,6 +250,9 @@ console.log("method called ");
         }); */
 
     });
+
+
+    
 
     // delete a todo
     app.delete('/api/todos/:todo_id', function (req, res) {
