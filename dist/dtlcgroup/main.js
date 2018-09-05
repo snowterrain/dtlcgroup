@@ -109,12 +109,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _booksread_booksread_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./booksread/booksread.component */ "./src/app/booksread/booksread.component.ts");
 /* harmony import */ var _completed_books_completed_books_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./completed-books/completed-books.component */ "./src/app/completed-books/completed-books.component.ts");
 /* harmony import */ var _ebook_ebook_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./ebook/ebook.component */ "./src/app/ebook/ebook.component.ts");
+/* harmony import */ var _donate_page_donate_page_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./donate-page/donate-page.component */ "./src/app/donate-page/donate-page.component.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
 
 
 
@@ -140,7 +142,8 @@ var routes = [
     { path: 'conferences', component: _conferences_conferences_component__WEBPACK_IMPORTED_MODULE_9__["ConferencesComponent"] },
     { path: 'booksread', component: _booksread_booksread_component__WEBPACK_IMPORTED_MODULE_10__["BooksreadComponent"] },
     { path: 'cb', component: _completed_books_completed_books_component__WEBPACK_IMPORTED_MODULE_11__["CompletedBooksComponent"] },
-    { path: 'ebook', component: _ebook_ebook_component__WEBPACK_IMPORTED_MODULE_12__["EbookComponent"] }
+    { path: 'ebook', component: _ebook_ebook_component__WEBPACK_IMPORTED_MODULE_12__["EbookComponent"] },
+    { path: 'donate', component: _donate_page_donate_page_component__WEBPACK_IMPORTED_MODULE_13__["DonatePageComponent"] }
 ];
 var AppRoutingModule = /** @class */ (function () {
     function AppRoutingModule() {
@@ -246,6 +249,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _booksread_booksread_component__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./booksread/booksread.component */ "./src/app/booksread/booksread.component.ts");
 /* harmony import */ var _completed_books_completed_books_component__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./completed-books/completed-books.component */ "./src/app/completed-books/completed-books.component.ts");
 /* harmony import */ var _ebook_ebook_component__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./ebook/ebook.component */ "./src/app/ebook/ebook.component.ts");
+/* harmony import */ var _event_users_event_users_component__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./event-users/event-users.component */ "./src/app/event-users/event-users.component.ts");
+/* harmony import */ var _donate_page_donate_page_component__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ./donate-page/donate-page.component */ "./src/app/donate-page/donate-page.component.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -262,6 +267,8 @@ var __decorate = (undefined && undefined.__decorate) || function (decorators, ta
 
 
 //calendar module
+
+
 
 
 
@@ -291,7 +298,9 @@ var AppModule = /** @class */ (function () {
                 _conferences_conferences_component__WEBPACK_IMPORTED_MODULE_16__["ConferencesComponent"],
                 _booksread_booksread_component__WEBPACK_IMPORTED_MODULE_17__["BooksreadComponent"],
                 _completed_books_completed_books_component__WEBPACK_IMPORTED_MODULE_18__["CompletedBooksComponent"],
-                _ebook_ebook_component__WEBPACK_IMPORTED_MODULE_19__["EbookComponent"]
+                _ebook_ebook_component__WEBPACK_IMPORTED_MODULE_19__["EbookComponent"],
+                _event_users_event_users_component__WEBPACK_IMPORTED_MODULE_20__["EventUsersComponent"],
+                _donate_page_donate_page_component__WEBPACK_IMPORTED_MODULE_21__["DonatePageComponent"]
             ],
             imports: [
                 _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"],
@@ -627,6 +636,69 @@ var DiscussionsComponent = /** @class */ (function () {
 
 /***/ }),
 
+/***/ "./src/app/donate-page/donate-page.component.html":
+/*!********************************************************!*\
+  !*** ./src/app/donate-page/donate-page.component.html ***!
+  \********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"container\">\n\n  <div class=\"row my-4\">\n      <div class=\"col-lg-12\">\n          <div class=\"col-md-12\">\n                      \n            </div>\n  \n  <div class=\"col-md-12\">\n  <!--     <h1> డిట్రాయిట్ తెలుగు సాహితీ సమితి</h1>\n      <h4> ఇరవై ఏళ్ళ పండగ</h4>\n      <h4> సెప్టెంబరు 29-30, 2018</h4> -->\n     \n      \n      \n\n \n  డిట్రాయిట్ తెలుగు సాహితీ సమితి, \" DETROIT TELUGU LITERARY CLUB\" అనే పేరు మీద లాభాపేక్ష లేని సంస్థ గా ఉత్తర అమెరికా లో నమోదు చేయబడినది.\n    మీరు పంపిన విరాళములు మీకు ఉత్తర అమెరికా లోనే  పన్ను రాయితీ ఇవ్వగలదు. \n    మీరు పంపిన డబ్బుకు మేము మీ చిరునామాకు గానీ, మీ ఈమెయిలు కి గానీ  మీరు విరాళం ఇచ్చినట్లు రసీదు  ఉత్తరము పంపుతాము. \n    విరాళము ఇచ్చి , ఏకారణము గానైనా రసీదు ఉత్తరం అందని వారు మమ్ము సంప్రదించవల్సినది . \n\n    <p>     </p>\n\n     \n\n\n    <div class=\"col-md-3\">\n  <img class=\"d-block w-10\" src=\"/assets/wireflym.jpg\">\n  </div>\n\n  <p>     </p>\n<p>\n \nDTLC కి విరాళం ఇవ్వడానికి సిద్దమైన వారు  \"GiveLify \"  అనే స్మార్ట్ ఫోన్ ఆప్ ద్వారా గానీ, చెక్ రూపేణా గానీ ఇవ్వగలరు.   \n\n\n</p>\n\n\n<p>\nస్మార్ట్ ఫోన్ ఆప్ ద్వారా  విరాళము ఇద్దామని అనుకున్నవారు: స్మార్ట్ ఫోన్ లో \"GiveLify \" అనే ఆప్ని దిగుమతి చేసుకొని. \"Detroit Telugu Literary Club\" అనే Charity ని  వెతికి మీరు ఇద్దామని అనుకున్న డబ్బు పంపవచ్చు. \n</p>\n<p>     </p>\n<div class=\"col-md-3\">\n<img class=\"d-block w-10\" src=\"/assets/wireflym2.jpg\">\n</div>\n<p>     </p>\n\n<p>\nమరిన్ని  వివరాలకు  - https://www.givelify.com/givers/\n</p>\n\n<p>\nచెక్ రూపేణా విరాళము ఇద్దామని అనుకున్నవారు -   DETROIT TELUGU LITERARY CLUB  పేరు  మీద చెక్ రాసి ఈ క్రింది చిరునామా కి పంపగలరు. \n\n</p>\nDETROIT TELUGU LITERARY CLUB\n1659 SQUIRREL VALLEY DR\n\nBLOOMFLD HLS , MI 48304\n      \n<!--         <div>\n  <span class=\"badge\">Posted 2018-08-02 20:47:04</span><div class=\"pull-right\"><span class=\"label label-default\">alice</span> <span class=\"label label-primary\">story</span> <span class=\"label label-success\">blog</span> <span class=\"label label-info\">personal</span> <span class=\"label label-warning\">Warning</span>\n  <span class=\"label label-danger\">Danger</span></div>         \n       </div> -->\n   \n  </div>\n  </div>\n  </div>\n  </div>\n\n"
+
+/***/ }),
+
+/***/ "./src/app/donate-page/donate-page.component.scss":
+/*!********************************************************!*\
+  !*** ./src/app/donate-page/donate-page.component.scss ***!
+  \********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "div.inner {\n  padding-top: 150px; }\n"
+
+/***/ }),
+
+/***/ "./src/app/donate-page/donate-page.component.ts":
+/*!******************************************************!*\
+  !*** ./src/app/donate-page/donate-page.component.ts ***!
+  \******************************************************/
+/*! exports provided: DonatePageComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DonatePageComponent", function() { return DonatePageComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var DonatePageComponent = /** @class */ (function () {
+    function DonatePageComponent() {
+    }
+    DonatePageComponent.prototype.ngOnInit = function () {
+    };
+    DonatePageComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-donate-page',
+            template: __webpack_require__(/*! ./donate-page.component.html */ "./src/app/donate-page/donate-page.component.html"),
+            styles: [__webpack_require__(/*! ./donate-page.component.scss */ "./src/app/donate-page/donate-page.component.scss")]
+        }),
+        __metadata("design:paramtypes", [])
+    ], DonatePageComponent);
+    return DonatePageComponent;
+}());
+
+
+
+/***/ }),
+
 /***/ "./src/app/ebook/ebook.component.html":
 /*!********************************************!*\
   !*** ./src/app/ebook/ebook.component.html ***!
@@ -788,6 +860,69 @@ export class DemoComponent {
  
 }
  */
+
+
+/***/ }),
+
+/***/ "./src/app/event-users/event-users.component.html":
+/*!********************************************************!*\
+  !*** ./src/app/event-users/event-users.component.html ***!
+  \********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<p>\n  event-users works!\n</p>\n"
+
+/***/ }),
+
+/***/ "./src/app/event-users/event-users.component.scss":
+/*!********************************************************!*\
+  !*** ./src/app/event-users/event-users.component.scss ***!
+  \********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = ""
+
+/***/ }),
+
+/***/ "./src/app/event-users/event-users.component.ts":
+/*!******************************************************!*\
+  !*** ./src/app/event-users/event-users.component.ts ***!
+  \******************************************************/
+/*! exports provided: EventUsersComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "EventUsersComponent", function() { return EventUsersComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var EventUsersComponent = /** @class */ (function () {
+    function EventUsersComponent() {
+    }
+    EventUsersComponent.prototype.ngOnInit = function () {
+    };
+    EventUsersComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-event-users',
+            template: __webpack_require__(/*! ./event-users.component.html */ "./src/app/event-users/event-users.component.html"),
+            styles: [__webpack_require__(/*! ./event-users.component.scss */ "./src/app/event-users/event-users.component.scss")]
+        }),
+        __metadata("design:paramtypes", [])
+    ], EventUsersComponent);
+    return EventUsersComponent;
+}());
+
 
 
 /***/ }),
@@ -1204,7 +1339,7 @@ var UserService = /** @class */ (function () {
     /** GET users from the server */
     UserService.prototype.getUsers = function () {
         var _this = this;
-        return this.http.get(this.usersURL)
+        return this.http.get('api/getEventUsers')
             .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["tap"])(function (users) { return _this.log("fetched users"); }), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["catchError"])(this.handleError('getUsers', [])));
     };
     /** GET User by id. Return `undefined` when id not found */
@@ -1335,7 +1470,7 @@ module.exports = ".bg-dark {\r\n    background-color: #343a40!important;\r\n}"
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "\n\n    <!-- Navigation -->\n    \n    <!-- Page Content -->\n    <div class=\"container\">\n\n      <!-- Heading Row -->\n      <div class=\"row my-4\">\n        <div class=\"col-lg-8\">\n          <!--img class=\"img-fluid rounded\" src=\"http://placehold.it/900x400\" alt=\"\"-->\n         \n                \n<!--Carousel Wrapper-->\n<div id=\"carousel-example-2\" class=\"carousel slide carousel-fade\" data-ride=\"carousel\">\n    <!--Indicators-->\n    <ol class=\"carousel-indicators\">\n        <li data-target=\"#carousel-example-2\" data-slide-to=\"0\" class=\"active\"></li>\n        <li data-target=\"#carousel-example-2\" data-slide-to=\"1\"></li>\n        <li data-target=\"#carousel-example-2\" data-slide-to=\"2\"></li>\n    </ol>\n    <!--/.Indicators-->\n    <!--Slides-->\n    <div class=\"carousel-inner\" role=\"listbox\">\n        <div class=\"carousel-item active\">\n            <div class=\"view\">\n                <img class=\"d-block w-100\" src=\"/assets/1.jpg\" alt=\"First slide\">\n                <div class=\"mask rgba-black-light\"></div>\n            </div>\n            <div class=\"carousel-caption\">\n               <!--  <h3 class=\"h3-responsive\">Event 1</h3>\n                <p>First text</p> -->\n            </div>\n        </div>\n        <div class=\"carousel-item\">\n            <!--Mask color-->\n            <div class=\"view\">\n                <img class=\"d-block w-100\" src=\"/assets/2.jpg\" alt=\"Second slide\">\n                <div class=\"mask rgba-black-light\"></div>\n            </div>\n            <div class=\"carousel-caption\">\n               <!--  <h3 class=\"h3-responsive\">Event 2</h3>\n                <p>Secondary text</p> -->\n            </div>\n        </div>\n        <div class=\"carousel-item\">\n            <!--Mask color-->\n            <div class=\"view\">\n                <img class=\"d-block w-100\" src=\"/assets/3.jpg\" alt=\"Third slide\">\n                <div class=\"mask rgba-black-slight\"></div>\n            </div>\n            <div class=\"carousel-caption\">\n                <!-- <h3 class=\"h3-responsive\">Event 3</h3>\n                <p>Third text</p> -->\n            </div>\n        </div>\n    </div>\n    <!--/.Slides-->\n    <!--Controls-->\n    <a class=\"carousel-control-prev\" href=\"#carousel-example-2\" role=\"button\" data-slide=\"prev\">\n        <span class=\"carousel-control-prev-icon\" aria-hidden=\"true\"></span>\n        <span class=\"sr-only\">Previous</span>\n    </a>\n    <a class=\"carousel-control-next\" href=\"#carousel-example-2\" role=\"button\" data-slide=\"next\">\n        <span class=\"carousel-control-next-icon\" aria-hidden=\"true\"></span>\n        <span class=\"sr-only\">Next</span>\n    </a>\n    <!--/.Controls-->\n</div>\n<!--/.Carousel Wrapper-->\n\n        </div>\n        <!-- /.col-lg-8 -->\n        <div class=\"col-lg-4\">\n          <h1> డిట్రాయిట్ తెలుగు సాహితీ సమితి</h1>\n          <p>\n           \n            ఇరవై ఏళ్ళ పండగ\n            సెప్టెంబరు 29-30, 2018         \n              \n\n          </p>\n                 <a class=\"btn blue-grey waves-light btn-lg\" routerLink=\"/register\">నమోదు!</a>\n\n                 <p>\n                        పాల్గొన దలచిన వారు ఇక్కడ నమోదు చేసుకోవలసినది. \n                        </p>\n        </div>\n        \n        <!-- /.col-md-4 -->\n      </div>\n      <!-- /.row -->\n\n      <!-- Call to Action Well -->\n      <div class=\"card text-white special-color-dark my-4 text-center\">\n        <div class=\"card-body\">\n          <p class=\"text-red m-0\">తెలుగు చదవండి, చదివించండి, మాట్లాడండి</p>\n        </div>\n      </div>\n\n      <!-- Content Row -->\n      <div class=\"row\">\n        <div class=\"col-md-4 mb-4\">\n          <div class=\"card h-100\">\n            <div class=\"card-body\">\n              <h2 class=\"card-title\">ఇరవై ఏళ్ళ పండగ  ప్రకటన </h2>\n              <p class=\"card-text\">ఇరవై ఏళ్ళ పండగ  ప్రకటన \n                    ఈ ఇరవై ఏళ్ళ పండగ. సాహితీ సమితి సంబరాలకు తోటి సాహిత్యాభిమానులతో కలిసి సదస్సు నిర్వహించుకోవడంకన్నాసబబైనది మరొకటి ఉండబోదు. అందుకే తెలుగు సాహిత్యాభిమానులందరినీ ఈ ఇరవై ఏళ్ళ పండగ సందర్భంగా డిట్రాయిట్ కుఆహ్వానిస్తున్నాం.  \n                  </p>\n            </div>\n            <div class=\"card-footer\">\n              <a routerLink=\"/conferences\" class=\"btn blue-grey waves-light\">ఇంకా.. </a>\n            </div>\n          </div>\n        </div>\n        <!-- /.col-md-4 -->\n        <div class=\"col-md-4 mb-4\">\n          <div class=\"card h-100\">\n            <div class=\"card-body\">\n              <h2 class=\"card-title\">మేము ఇప్పటి వరకు చదివిన పుస్తకములు </h2>\n              <p class=\"card-text\">మేము గత ఇరవై సంవత్సరాలుగా చదివిన పుస్తకాల వివరాలు \n                  </p>\n            </div>\n            <div class=\"card-footer\">\n              <a routerLink=\"/cb\" class=\"btn blue-grey waves-light\">ఇంకా.. </a>\n            </div>\n          </div>\n        </div>\n        <!-- /.col-md-4 -->\n        <div class=\"col-md-4 mb-4\">\n          <div class=\"card h-100\">\n            <div class=\"card-body\">\n              <h2 class=\"card-title\">ఈ సంవత్సరము చదువుతున్న పుస్తకాలు </h2>\n              <p class=\"card-text\">మేము ప్రతి నెల మొదటి ఆదివారము నోవై , మిచిగాన్ లో శ్రీ వెంకటేశ్వర గుడిలో  సాయంత్రం 2:30 నుండి 5:30 గంటల వరకు చదువుతున్న పుస్తకాల వివరాలు \n                  </p>\n            </div>\n            <div class=\"card-footer\">\n                    \n              <a routerLink=\"/booksread\" class=\"btn blue-grey waves-light\">ఇంకా.. </a>\n            </div>\n          </div>\n        </div>\n        <!-- /.col-md-4 -->\n\n      </div>\n      <!-- /.row -->\n\n    </div>\n    <!-- /.container -->\n\n\n\n\n\n\n\n"
+module.exports = "\n\n    <!-- Navigation -->\n    \n    <!-- Page Content -->\n    <div class=\"container\">\n\n      <!-- Heading Row -->\n      <div class=\"row my-4\">\n        <div class=\"col-lg-8\">\n          <!--img class=\"img-fluid rounded\" src=\"http://placehold.it/900x400\" alt=\"\"-->\n         \n                \n<!--Carousel Wrapper-->\n<div id=\"carousel-example-2\" class=\"carousel slide carousel-fade\" data-ride=\"carousel\">\n    <!--Indicators-->\n    <ol class=\"carousel-indicators\">\n        <li data-target=\"#carousel-example-2\" data-slide-to=\"0\" class=\"active\"></li>\n        <li data-target=\"#carousel-example-2\" data-slide-to=\"1\"></li>\n        <li data-target=\"#carousel-example-2\" data-slide-to=\"2\"></li>\n    </ol>\n    <!--/.Indicators-->\n    <!--Slides-->\n    <div class=\"carousel-inner\" role=\"listbox\">\n        <div class=\"carousel-item active\">\n            <div class=\"view\">\n                <img class=\"d-block w-100\" src=\"/assets/1.jpg\" alt=\"First slide\">\n                <div class=\"mask rgba-black-light\"></div>\n            </div>\n            <div class=\"carousel-caption\">\n               <!--  <h3 class=\"h3-responsive\">Event 1</h3>\n                <p>First text</p> -->\n            </div>\n        </div>\n        <div class=\"carousel-item\">\n            <!--Mask color-->\n            <div class=\"view\">\n                <img class=\"d-block w-100\" src=\"/assets/2.jpg\" alt=\"Second slide\">\n                <div class=\"mask rgba-black-light\"></div>\n            </div>\n            <div class=\"carousel-caption\">\n               <!--  <h3 class=\"h3-responsive\">Event 2</h3>\n                <p>Secondary text</p> -->\n            </div>\n        </div>\n        <div class=\"carousel-item\">\n            <!--Mask color-->\n            <div class=\"view\">\n                <img class=\"d-block w-100\" src=\"/assets/3.jpg\" alt=\"Third slide\">\n                <div class=\"mask rgba-black-slight\"></div>\n            </div>\n            <div class=\"carousel-caption\">\n                <!-- <h3 class=\"h3-responsive\">Event 3</h3>\n                <p>Third text</p> -->\n            </div>\n        </div>\n    </div>\n    <!--/.Slides-->\n    <!--Controls-->\n    <a class=\"carousel-control-prev\" href=\"#carousel-example-2\" role=\"button\" data-slide=\"prev\">\n        <span class=\"carousel-control-prev-icon\" aria-hidden=\"true\"></span>\n        <span class=\"sr-only\">Previous</span>\n    </a>\n    <a class=\"carousel-control-next\" href=\"#carousel-example-2\" role=\"button\" data-slide=\"next\">\n        <span class=\"carousel-control-next-icon\" aria-hidden=\"true\"></span>\n        <span class=\"sr-only\">Next</span>\n    </a>\n    <!--/.Controls-->\n</div>\n<!--/.Carousel Wrapper-->\n\n        </div>\n        <!-- /.col-lg-8 -->\n        <div class=\"col-lg-4\">\n          <h1> డిట్రాయిట్ తెలుగు సాహితీ సమితి</h1>\n          <p>\n           \n            ఇరవై ఏళ్ళ పండగ\n            సెప్టెంబరు 29-30, 2018         \n              \n\n          </p>\n                 <a class=\"btn blue-grey waves-light btn-lg\" routerLink=\"/register\">నమోదు!</a>\n\n                 <p>\n                        పాల్గొన దలచిన వారు ఇక్కడ నమోదు చేసుకోవలసినది. \n                        </p>\n        </div>\n        \n        <!-- /.col-md-4 -->\n      </div>\n      <!-- /.row -->\n\n      <!-- Call to Action Well -->\n      <div class=\"card text-white special-color-dark my-4 text-center\">\n        <div class=\"card-body\">\n          <p class=\"text-red m-0\">తెలుగు చదవండి, చదివించండి, మాట్లాడండి.  <a class=\"btn-warning btn-sm\" routerLink=\"/donate\">విరాళము ఇవ్వదలచిన వారు  !</a></p>\n        </div>\n      </div>\n\n      <!-- Content Row -->\n      <div class=\"row\">\n        <div class=\"col-md-4 mb-4\">\n          <div class=\"card h-100\">\n            <div class=\"card-body\">\n              <h2 class=\"card-title\">ఇరవై ఏళ్ళ పండగ  ప్రకటన </h2>\n              <p class=\"card-text\">ఇరవై ఏళ్ళ పండగ  ప్రకటన \n                    ఈ ఇరవై ఏళ్ళ పండగ. సాహితీ సమితి సంబరాలకు తోటి సాహిత్యాభిమానులతో కలిసి సదస్సు నిర్వహించుకోవడంకన్నాసబబైనది మరొకటి ఉండబోదు. అందుకే తెలుగు సాహిత్యాభిమానులందరినీ ఈ ఇరవై ఏళ్ళ పండగ సందర్భంగా డిట్రాయిట్ కుఆహ్వానిస్తున్నాం.  \n                  </p>\n            </div>\n            <div class=\"card-footer\">\n              <a routerLink=\"/conferences\" class=\"btn blue-grey waves-light\">ఇంకా.. </a>\n            </div>\n          </div>\n        </div>\n        <!-- /.col-md-4 -->\n        <div class=\"col-md-4 mb-4\">\n          <div class=\"card h-100\">\n            <div class=\"card-body\">\n              <h2 class=\"card-title\">మేము ఇప్పటి వరకు చదివిన పుస్తకములు </h2>\n              <p class=\"card-text\">మేము గత ఇరవై సంవత్సరాలుగా చదివిన పుస్తకాల వివరాలు \n                  </p>\n            </div>\n            <div class=\"card-footer\">\n              <a routerLink=\"/cb\" class=\"btn blue-grey waves-light\">ఇంకా.. </a>\n            </div>\n          </div>\n        </div>\n        <!-- /.col-md-4 -->\n        <div class=\"col-md-4 mb-4\">\n          <div class=\"card h-100\">\n            <div class=\"card-body\">\n              <h2 class=\"card-title\">ఈ సంవత్సరము చదువుతున్న పుస్తకాలు </h2>\n              <p class=\"card-text\">మేము ప్రతి నెల మొదటి ఆదివారము నోవై , మిచిగాన్ లో శ్రీ వెంకటేశ్వర గుడిలో  సాయంత్రం 2:30 నుండి 5:30 గంటల వరకు చదువుతున్న పుస్తకాల వివరాలు \n                  </p>\n            </div>\n            <div class=\"card-footer\">\n                    \n              <a routerLink=\"/booksread\" class=\"btn blue-grey waves-light\">ఇంకా.. </a>\n            </div>\n          </div>\n        </div>\n        <!-- /.col-md-4 -->\n\n      </div>\n      <!-- /.row -->\n\n    </div>\n    <!-- /.container -->\n\n\n\n\n\n\n\n"
 
 /***/ }),
 

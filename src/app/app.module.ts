@@ -27,6 +27,8 @@ import { ConferencesComponent } from './conferences/conferences.component';
 import { BooksreadComponent } from './booksread/booksread.component';
 import { CompletedBooksComponent } from './completed-books/completed-books.component';
 import { EbookComponent } from './ebook/ebook.component';
+import { EventUsersComponent } from './event-users/event-users.component';
+import { DonatePageComponent } from './donate-page/donate-page.component';
 
 
 @NgModule({
@@ -43,7 +45,9 @@ import { EbookComponent } from './ebook/ebook.component';
     ConferencesComponent,
     BooksreadComponent,
     CompletedBooksComponent,
-    EbookComponent
+    EbookComponent,
+    EventUsersComponent,
+    DonatePageComponent
   ],
   imports: [
     BrowserModule,

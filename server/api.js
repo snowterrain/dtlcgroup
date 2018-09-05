@@ -61,6 +61,21 @@ function getTodos(res) {
     }); */
 };
 
+
+function getEventUsers(res) {
+
+   
+    EventUser.find(function (err, eventUsers) {
+
+        // if there is an error retrieving, send the error. nothing after res.send(err) will execute
+        if (err) {
+            res.send(err);
+        }
+
+        res.json(eventUsers); // return all todos in JSON format
+    }); 
+};
+
 function getAll(res) {
 
 
@@ -72,11 +87,11 @@ module.exports = function (app) {
 
     // api ---------------------------------------------------------------------
     // get all todos
-    app.get('/api/todos', function (req, res) {
+   /*  app.get('/api/getEventUsers', function (req, res) {
         // use mongoose to get all todos in the database
-        getTodos(res);
+        getEventUsers(res);
 
-    });
+    }); */
 
         // get all todos
         app.get('/api/getRegisteredUser', function (req, res) {

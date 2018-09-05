@@ -26,7 +26,7 @@ export class UserService {
  
   /** GET users from the server */
   getUsers (): Observable<User[]> {
-    return this.http.get<User[]>(this.usersURL)
+    return this.http.get<User[]>('api/getEventUsers')
       .pipe(
         tap(users => this.log(`fetched users`)),
         catchError(this.handleError('getUsers', []))
