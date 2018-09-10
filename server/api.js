@@ -87,11 +87,11 @@ module.exports = function (app) {
 
     // api ---------------------------------------------------------------------
     // get all todos
-   /*  app.get('/api/getEventUsers', function (req, res) {
+    app.get('/api/getEventUsers', function (req, res) {
         // use mongoose to get all todos in the database
         getEventUsers(res);
 
-    }); */
+    }); 
 
         // get all todos
         app.get('/api/getRegisteredUser', function (req, res) {
