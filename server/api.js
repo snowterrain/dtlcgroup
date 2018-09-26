@@ -285,8 +285,16 @@ console.log("method called ");
         res.sendFile(__dirname + '/dist/dtlcgroup/email.html'); // load the single view file (angular will handle the page changes on the front-end)
     });
 
+ 
     // application -------------------------------------------------------------
     app.get('*', function (req, res) {
         res.sendFile(__dirname + '/dist/dtlcgroup/index.html'); // load the single view file (angular will handle the page changes on the front-end)
     });
+
+
+  
+
+ 
+
+
 };
