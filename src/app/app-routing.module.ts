@@ -14,6 +14,7 @@ import { BooksreadComponent } from './booksread/booksread.component';
 import { CompletedBooksComponent } from './completed-books/completed-books.component';
 import {EbookComponent} from './ebook/ebook.component';
 import {DonatePageComponent} from './donate-page/donate-page.component'
+import {ShortfilmComponent} from './shortfilm/shortfilm.component'
 
 const routes: Routes = [
   { path: '', redirectTo: '/welcome', pathMatch: 'full' },
@@ -28,7 +29,8 @@ const routes: Routes = [
   { path: 'booksread', component: BooksreadComponent},
   { path: 'cb', component: CompletedBooksComponent},
   { path: 'ebook', component: EbookComponent},
-  { path: 'donate', component: DonatePageComponent}
+  { path: 'donate', component: DonatePageComponent},
+  { path: 'shortfilm', component: ShortfilmComponent}
   ];
 
 @NgModule({

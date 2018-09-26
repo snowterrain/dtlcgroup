@@ -1,3 +1,9 @@
 .bg-dark {
     background-color: #343a40!important;
 }
+
+
+.thumbnail1 {
+    position:relative;
+    overflow:hidden;
+}
