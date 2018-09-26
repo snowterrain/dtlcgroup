@@ -171,7 +171,7 @@ var AppRoutingModule = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "\r\n"
+module.exports = "\r\n\r\n"
 
 /***/ }),
 
@@ -182,7 +182,7 @@ module.exports = "\r\n"
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "\r\n<nav class=\"navbar navbar-expand-lg navbar-dark special-color-dark fixed-top\">\r\n\r\n    \r\n    <div class=\"container\">\r\n      \r\n      <!-- a class=\"navbar-brand\" href=\"#\">డిట్రాయిట్ తెలుగు సాహితీ సమితి</a -->\r\n\r\n\r\n      <!--a class=\"navbar-brand\" href=\"#\"><img src=\"/assets/dtlclogo.jpg\"  class=\"img-responsive\" height=\"100\"/></a-->\r\n      <!--a class=\"navbar-brand\" href=\"#\">డిట్రాయిట్ తెలుగు సాహితీ సమితి</a-->\r\n      <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarResponsive\" aria-controls=\"navbarResponsive\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\r\n        <span class=\"navbar-toggler-icon\">\r\n        \r\n        </span>\r\n      </button>\r\n      <div class=\"navbar-collapse collapse\" id=\"navbarResponsive\">\r\n        <ul class=\"navbar-nav ml-auto\">\r\n          <li class=\"nav-item active\">\r\n            <a class=\"nav-link\" routerLink=\"/welcome\">Home\r\n              <span class=\"sr-only\">(current)</span>  \r\n            </a>\r\n          </li>\r\n          <li class=\"nav-item\">\r\n            <a class=\"nav-link\" routerLink=\"/about\">మా గురించి </a>\r\n          </li>\r\n         \r\n          <li class=\"nav-item\">\r\n          <!--   <a class=\"nav-link\" href=\"#\">Membership</a> -->\r\n            <a  class=\"nav-link\" routerLink=\"/membership\">సభ్యత్వము </a>\r\n          </li>\r\n          <li class=\"nav-item\">\r\n              <!--   <a class=\"nav-link\" href=\"#\">Membership</a> -->\r\n                <a  class=\"nav-link\" routerLink=\"/ebook\">ebook</a>\r\n              </li>\r\n\r\n                          \r\n\r\n          <li class=\"nav-item\">\r\n              <a class=\"nav-link\" routerLink=\"/conferences\">సదస్సులు</a>\r\n            </li>\r\n         <!--    <li class=\"nav-item\">\r\n                <a class=\"nav-link\" routerLink=\"/forum\">చర్చలు</a>\r\n              </li> -->\r\n          <li class=\"nav-item\">\r\n            <a class=\"nav-link\" routerLink=\"/contact\">కలిసే వివరాలు</a>\r\n          </li>\r\n        </ul>\r\n        \r\n      </div>\r\n    </div>\r\n  </nav>\r\n\r\n  <div class=\"container\" position-relative>\r\n\r\n    <!-- Heading Row -->\r\n   \r\n      <div class=\"col-lg-12\">\r\n          <a class=\"navbar-brand\" href=\"#\"><img src=\"/assets/dtlclogo.jpg\"  class=\"img-fluid\" /></a>\r\n        </div>\r\n </div>\r\n\r\n \r\n\r\n<!-- <nav>\r\n    <a routerLink=\"/welcome\">Welcome</a>\r\n  <a routerLink=\"/test\">Dashboard</a>\r\n</nav> -->\r\n<router-outlet></router-outlet>\r\n\r\n <!-- Footer -->\r\n<footer class=\"page-footer font-small blue py-5 special-color-dark\">\r\n    <div class=\"container\">\r\n      <p class=\"m-0 text-center text-white\">Copyright &copy; DTLC Group 2017</p>\r\n    </div>\r\n\r\n  </footer> \r\n\r\n\r\n\r\n  <!-- Footer -->\r\n \r\n\r\n\r\n"
+module.exports = "\r\n<nav class=\"navbar navbar-expand-lg navbar-dark special-color-dark fixed-top\">\r\n\r\n    \r\n    <div class=\"container\">\r\n      \r\n      <!-- a class=\"navbar-brand\" href=\"#\">డిట్రాయిట్ తెలుగు సాహితీ సమితి</a -->\r\n\r\n\r\n      <!--a class=\"navbar-brand\" href=\"#\"><img src=\"/assets/dtlclogo.jpg\"  class=\"img-responsive\" height=\"100\"/></a-->\r\n      <!--a class=\"navbar-brand\" href=\"#\">డిట్రాయిట్ తెలుగు సాహితీ సమితి</a-->\r\n      <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarResponsive\" aria-controls=\"navbarResponsive\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\r\n        <span class=\"navbar-toggler-icon\">\r\n        \r\n        </span>\r\n      </button>\r\n      <div class=\"navbar-collapse collapse\" id=\"navbarResponsive\">\r\n        <ul class=\"navbar-nav ml-auto\">\r\n          <li class=\"nav-item active\">\r\n            <a class=\"nav-link\" routerLink=\"/welcome\">Home\r\n              <span class=\"sr-only\">(current)</span>  \r\n            </a>\r\n          </li>\r\n          <li class=\"nav-item\">\r\n            <a class=\"nav-link\" routerLink=\"/about\">మా గురించి </a>\r\n          </li>\r\n         \r\n          <li class=\"nav-item\">\r\n          <!--   <a class=\"nav-link\" href=\"#\">Membership</a> -->\r\n            <a  class=\"nav-link\" routerLink=\"/membership\">సభ్యత్వము </a>\r\n          </li>\r\n          <li class=\"nav-item\">\r\n              <!--   <a class=\"nav-link\" href=\"#\">Membership</a> -->\r\n                <a  class=\"nav-link\" routerLink=\"/ebook\">ebook</a>\r\n              </li>\r\n\r\n                          \r\n\r\n          <li class=\"nav-item\">\r\n              <a class=\"nav-link\" routerLink=\"/conferences\">సదస్సులు</a>\r\n            </li>\r\n         <!--    <li class=\"nav-item\">\r\n                <a class=\"nav-link\" routerLink=\"/forum\">చర్చలు</a>\r\n              </li> -->\r\n          <li class=\"nav-item\">\r\n            <a class=\"nav-link\" routerLink=\"/contact\">కలిసే వివరాలు</a>\r\n          </li>\r\n        </ul>\r\n        \r\n      </div>\r\n    </div>\r\n  </nav>\r\n \r\n  <div class=\"container\" position-relative>\r\n\r\n    <!-- Heading Row -->\r\n   \r\n      <div class=\"col-lg-12\">\r\n          <a class=\"navbar-brand\" href=\"#\"><img src=\"/assets/dtlclogo.jpg\"  class=\"img-fluid\" /></a>\r\n        </div>\r\n </div>\r\n\r\n \r\n\r\n<!-- <nav>\r\n    <a routerLink=\"/welcome\">Welcome</a>\r\n  <a routerLink=\"/test\">Dashboard</a>\r\n</nav> -->\r\n<router-outlet></router-outlet>\r\n\r\n <!-- Footer -->\r\n<footer class=\"page-footer font-small blue py-5 special-color-dark\">\r\n    <div class=\"container\">\r\n      <p class=\"m-0 text-center text-white\">Copyright &copy; DTLC Group 2017</p>\r\n    </div>\r\n\r\n  </footer> \r\n\r\n\r\n\r\n  <!-- Footer -->\r\n \r\n\r\n\r\n"
 
 /***/ }),
 
@@ -241,26 +241,28 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _event_calendar_event_calendar_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./event-calendar/event-calendar.component */ "./src/app/event-calendar/event-calendar.component.ts");
 /* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm5/forms.js");
 /* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm5/http.js");
-/* harmony import */ var _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @angular/platform-browser/animations */ "./node_modules/@angular/platform-browser/fesm5/animations.js");
-/* harmony import */ var angular_calendar__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! angular-calendar */ "./node_modules/angular-calendar/fesm5/angular-calendar.js");
-/* harmony import */ var _about_about_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./about/about.component */ "./src/app/about/about.component.ts");
-/* harmony import */ var _discussions_discussions_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./discussions/discussions.component */ "./src/app/discussions/discussions.component.ts");
-/* harmony import */ var _contact_contact_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./contact/contact.component */ "./src/app/contact/contact.component.ts");
-/* harmony import */ var _register_register_component__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./register/register.component */ "./src/app/register/register.component.ts");
-/* harmony import */ var _messages_messages_component__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./messages/messages.component */ "./src/app/messages/messages.component.ts");
-/* harmony import */ var _conferences_conferences_component__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./conferences/conferences.component */ "./src/app/conferences/conferences.component.ts");
-/* harmony import */ var _booksread_booksread_component__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./booksread/booksread.component */ "./src/app/booksread/booksread.component.ts");
-/* harmony import */ var _completed_books_completed_books_component__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./completed-books/completed-books.component */ "./src/app/completed-books/completed-books.component.ts");
-/* harmony import */ var _ebook_ebook_component__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./ebook/ebook.component */ "./src/app/ebook/ebook.component.ts");
-/* harmony import */ var _event_users_event_users_component__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./event-users/event-users.component */ "./src/app/event-users/event-users.component.ts");
-/* harmony import */ var _donate_page_donate_page_component__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ./donate-page/donate-page.component */ "./src/app/donate-page/donate-page.component.ts");
-/* harmony import */ var _shortfilm_shortfilm_component__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ./shortfilm/shortfilm.component */ "./src/app/shortfilm/shortfilm.component.ts");
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/fesm5/common.js");
+/* harmony import */ var _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @angular/platform-browser/animations */ "./node_modules/@angular/platform-browser/fesm5/animations.js");
+/* harmony import */ var angular_calendar__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! angular-calendar */ "./node_modules/angular-calendar/fesm5/angular-calendar.js");
+/* harmony import */ var _about_about_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./about/about.component */ "./src/app/about/about.component.ts");
+/* harmony import */ var _discussions_discussions_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./discussions/discussions.component */ "./src/app/discussions/discussions.component.ts");
+/* harmony import */ var _contact_contact_component__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./contact/contact.component */ "./src/app/contact/contact.component.ts");
+/* harmony import */ var _register_register_component__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./register/register.component */ "./src/app/register/register.component.ts");
+/* harmony import */ var _messages_messages_component__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./messages/messages.component */ "./src/app/messages/messages.component.ts");
+/* harmony import */ var _conferences_conferences_component__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./conferences/conferences.component */ "./src/app/conferences/conferences.component.ts");
+/* harmony import */ var _booksread_booksread_component__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./booksread/booksread.component */ "./src/app/booksread/booksread.component.ts");
+/* harmony import */ var _completed_books_completed_books_component__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./completed-books/completed-books.component */ "./src/app/completed-books/completed-books.component.ts");
+/* harmony import */ var _ebook_ebook_component__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./ebook/ebook.component */ "./src/app/ebook/ebook.component.ts");
+/* harmony import */ var _event_users_event_users_component__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ./event-users/event-users.component */ "./src/app/event-users/event-users.component.ts");
+/* harmony import */ var _donate_page_donate_page_component__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ./donate-page/donate-page.component */ "./src/app/donate-page/donate-page.component.ts");
+/* harmony import */ var _shortfilm_shortfilm_component__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ./shortfilm/shortfilm.component */ "./src/app/shortfilm/shortfilm.component.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
 
 
 
@@ -295,28 +297,28 @@ var AppModule = /** @class */ (function () {
                 _test_page_test_page_component__WEBPACK_IMPORTED_MODULE_3__["TestPageComponent"],
                 _welcome_welcome_component__WEBPACK_IMPORTED_MODULE_5__["WelcomeComponent"],
                 _event_calendar_event_calendar_component__WEBPACK_IMPORTED_MODULE_6__["EventCalendarComponent"],
-                _about_about_component__WEBPACK_IMPORTED_MODULE_11__["AboutComponent"],
-                _discussions_discussions_component__WEBPACK_IMPORTED_MODULE_12__["DiscussionsComponent"],
-                _contact_contact_component__WEBPACK_IMPORTED_MODULE_13__["ContactComponent"],
-                _register_register_component__WEBPACK_IMPORTED_MODULE_14__["RegisterComponent"],
-                _messages_messages_component__WEBPACK_IMPORTED_MODULE_15__["MessagesComponent"],
-                _conferences_conferences_component__WEBPACK_IMPORTED_MODULE_16__["ConferencesComponent"],
-                _booksread_booksread_component__WEBPACK_IMPORTED_MODULE_17__["BooksreadComponent"],
-                _completed_books_completed_books_component__WEBPACK_IMPORTED_MODULE_18__["CompletedBooksComponent"],
-                _ebook_ebook_component__WEBPACK_IMPORTED_MODULE_19__["EbookComponent"],
-                _event_users_event_users_component__WEBPACK_IMPORTED_MODULE_20__["EventUsersComponent"],
-                _donate_page_donate_page_component__WEBPACK_IMPORTED_MODULE_21__["DonatePageComponent"],
-                _shortfilm_shortfilm_component__WEBPACK_IMPORTED_MODULE_22__["ShortfilmComponent"]
+                _about_about_component__WEBPACK_IMPORTED_MODULE_12__["AboutComponent"],
+                _discussions_discussions_component__WEBPACK_IMPORTED_MODULE_13__["DiscussionsComponent"],
+                _contact_contact_component__WEBPACK_IMPORTED_MODULE_14__["ContactComponent"],
+                _register_register_component__WEBPACK_IMPORTED_MODULE_15__["RegisterComponent"],
+                _messages_messages_component__WEBPACK_IMPORTED_MODULE_16__["MessagesComponent"],
+                _conferences_conferences_component__WEBPACK_IMPORTED_MODULE_17__["ConferencesComponent"],
+                _booksread_booksread_component__WEBPACK_IMPORTED_MODULE_18__["BooksreadComponent"],
+                _completed_books_completed_books_component__WEBPACK_IMPORTED_MODULE_19__["CompletedBooksComponent"],
+                _ebook_ebook_component__WEBPACK_IMPORTED_MODULE_20__["EbookComponent"],
+                _event_users_event_users_component__WEBPACK_IMPORTED_MODULE_21__["EventUsersComponent"],
+                _donate_page_donate_page_component__WEBPACK_IMPORTED_MODULE_22__["DonatePageComponent"],
+                _shortfilm_shortfilm_component__WEBPACK_IMPORTED_MODULE_23__["ShortfilmComponent"]
             ],
             imports: [
                 _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"],
                 _angular_forms__WEBPACK_IMPORTED_MODULE_7__["FormsModule"],
                 _angular_common_http__WEBPACK_IMPORTED_MODULE_8__["HttpClientModule"],
                 _app_routing_module__WEBPACK_IMPORTED_MODULE_4__["AppRoutingModule"],
-                _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_9__["BrowserAnimationsModule"],
-                angular_calendar__WEBPACK_IMPORTED_MODULE_10__["CalendarModule"].forRoot()
+                _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_10__["BrowserAnimationsModule"],
+                angular_calendar__WEBPACK_IMPORTED_MODULE_11__["CalendarModule"].forRoot()
             ],
-            providers: [],
+            providers: [{ provide: _angular_common__WEBPACK_IMPORTED_MODULE_9__["LocationStrategy"], useClass: _angular_common__WEBPACK_IMPORTED_MODULE_9__["HashLocationStrategy"] }],
             bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_2__["AppComponent"]]
         })
     ], AppModule);

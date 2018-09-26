@@ -11,6 +11,9 @@ import { EventCalendarComponent } from './event-calendar/event-calendar.componen
 import { FormsModule }   from '@angular/forms';
 import { HttpClientModule }    from '@angular/common/http';
 
+import {LocationStrategy, HashLocationStrategy} from '@angular/common';
+
+
 
 
 //calendar module
@@ -59,7 +62,7 @@ import { ShortfilmComponent } from './shortfilm/shortfilm.component';
      BrowserAnimationsModule,
      CalendarModule.forRoot()
   ],
-  providers: [],
+  providers: [{provide: LocationStrategy, useClass: HashLocationStrategy}],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
